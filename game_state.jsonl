@@ -1,6 +1,1 @@
-{"timestamp": "10:52:59.749", "elapsed_s": 1, "frame": 60, "screen_size": [1280, 720]}
-{"timestamp": "10:53:00.755", "elapsed_s": 2, "frame": 120, "screen_size": [1280, 720]}
-{"timestamp": "10:53:01.783", "elapsed_s": 3, "frame": 180, "screen_size": [1280, 720]}
-{"timestamp": "10:53:02.802", "elapsed_s": 4, "frame": 240, "screen_size": [1280, 720]}
-{"timestamp": "10:53:03.854", "elapsed_s": 5, "frame": 300, "screen_size": [1280, 720]}
-{"timestamp": "10:53:04.886", "elapsed_s": 6, "frame": 360, "screen_size": [1280, 720]}
+{"timestamp": "14:03:44.151", "elapsed_s": 1, "frame": 60, "screen_size": [1280, 720], "player": {"type": "Player", "pos": [640.0, 360.0], "vel": [0.0, 0.0], "rad": 20, "rot": 0}}
