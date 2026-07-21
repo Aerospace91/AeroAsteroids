@@ -16,15 +16,21 @@ class Asteroid(CircleShape):
         
     def split(self):
         self.kill()
+        
         if self.radius <= ASTEROID_MIN_RADIUS:
             return
 
         log_event("asteroid_split")
+        
         ran = random.uniform(20, 50)
-        ast1 = self.velocity.rotate(ran)
-        ast2 = self.velocity.rotate(-ran)
-        ast_r = self.radius - ASTEROID_MIN_RADIUS
-        new_ast1 = Asteroid(self.position.x, self.position.y, ast_r)
-        new_ast2 = Asteroid(self.position.x, self.position.y, ast_r)
-        new_ast1.velocity *= ast1 * 1.2
-        new_ast2.velocity *= ast2 * 1.2
+        
+        a = self.velocity.rotate(ran)
+        b = self.velocity.rotate(-ran)
+        
+        new_r = self.radius - ASTEROID_MIN_RADIUS
+        
+        asteroid = Asteroid(self.position.x, self.position.y, new_r)
+        asteroid.velocity *= a * 1.2
+        
+        asteroid = Asteroid(self.position.x, self.position.y, new_r)
+        asteroid.velocity *= b * 1.2
