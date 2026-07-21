@@ -27,4 +27,4 @@ class Asteroid(CircleShape):
         new_ast1 = Asteroid(self.position.x, self.position.y, ast_r)
         new_ast2 = Asteroid(self.position.x, self.position.y, ast_r)
         new_ast1.velocity *= ast1 * 1.2
-        new_ast1.velocity *= ast2 * 1.2
+        new_ast2.velocity *= ast2 * 1.2
