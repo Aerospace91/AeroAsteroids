@@ -217,5 +217,6 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Logger
 game_state.jsonl
 game_events.jsonl
